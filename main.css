@@ -247,8 +247,8 @@ display: grid;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding-top: 15vw;
-  padding-bottom: 15vw;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   grid-row-gap: 5em;
 }
 .logoContainer{
@@ -309,6 +309,7 @@ display: grid;
 
 }
 @media screen and (max-width: 900px) {
+
   .c2{
     grid-column: 2;
   }
