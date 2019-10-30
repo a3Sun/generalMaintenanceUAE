@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8cf8a6c-ce71-499c-b216-319152fe4d17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cleaning.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handyman.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/IconCertificate.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/IconCertificate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/iconBadge.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/iconBadge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/iconCalender.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/iconCalender.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/iconClock.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/iconClock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/iconLocation.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/iconLocation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/iconPeople.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/iconPeople.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/iconTimeline.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/iconTimeline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572149529270</updated>
-      <workItem from="1572149531770" duration="42399000" />
+      <workItem from="1572149531770" duration="59307000" />
     </task>
     <servers />
   </component>

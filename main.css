@@ -1,19 +1,21 @@
 
 html {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6f75a0+0,40435f+100 */
-  background:#000B30;
+  background: #f9f9f9;
   font-size: 1em;
   line-height: 1.5;
 }
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 body *{
   margin: 0;
   font-family: Archivo, sans-serif;
-  color: white;
   padding: 0;
   box-sizing: border-box;
+
+
 }
 .c2{
   grid-column: 2;
@@ -76,11 +78,24 @@ body *{
 h1{
   font-size: 4.5em;
   line-height: 1;
+  font-weight: 700;
+  opacity: 0.9;
+  text-decoration: underline;
+
 }
 p{
   font-size: 1.2em;
-  line-height: 2.2;
-  opacity: 0.9;
+  line-height: 2;
+  opacity: 0.8;
+}
+.backround2{
+  background-image:url("media/camel.jpg") !important ;
+  background-position: center;
+}
+.threeGumTextContainer p{
+  line-height: 1.8;
+  padding-top: 1em;
+  width: 95%;
 }
 ul{
   line-height: 2.2;
@@ -89,17 +104,12 @@ ul{
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
-  list-style: none; /* Remove default bullets */
+  list-style: square inside
 
 }
 
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color:  #EFFF00; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+ ul {
+
 }
 a{
   text-decoration: underline;
@@ -111,12 +121,14 @@ span{
   font-weight: 500;
   line-height: 3 !important;
   font-size: 1.2rem;
+
 }
 
 .subtitle{
   font-size: 1.7em;
   font-weight: 700;
   line-height: 1.6;
+  color: white;
 }
 
 
@@ -124,12 +136,14 @@ span{
 
 .gridLayoutThreeGum{
   min-height: 40vh;
-  -webkit-box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.46);
-  -moz-box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.46);
-  box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.46);
+  -webkit-box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.1);
+  box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.1);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
+  background:#000B30;
+  color: white;
 }
 
 .gridLayoutThreeGum > div{
@@ -167,12 +181,14 @@ display: grid;
   display: grid;
   grid-template-rows: 3em 10em 3em 1fr 10em 3em;
   grid-template-columns:1fr 9fr 1fr;
+  overflow-x: hidden!important;
 }
 .navbar{
   -webkit-box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.16);
   -moz-box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.16);
   box-shadow: -5px 5px 31px 0px rgba(0,0,0,0.16);
   background-color: #00155C;
+
 
   display: grid;
   grid-column: 2;
@@ -201,47 +217,128 @@ display: grid;
   grid-column: 2/3;
   height: 100%;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.navbarTextSide::-webkit-scrollbar {
+  width: 0.1em;
+  height: 0.3em;
+}
+.navbarTextSide::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 9px rgba(0,0,0,0.1);
+}
+.navbarTextSide::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 .navbar .navbarTextSide .links{
-  height: 50%;
-  width: 100%;
+  grid-row: 2;
+  grid-column: 1;
   align-self: flex-end;
   border-top: 1px solid rgba(255,255,255,0.5);
   display: flex;
   align-items: center;
 
-
 }
-.navbar .navbarTextSide .links p{
+.navbar .navbarTextSide .navbarFeatures{
+  grid-row: 1;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+}
+.navbar .navbarTextSide .links a{
   padding-right: 2em;
   color: rgba(255,255,255,0.8);
+  transition: 0.3s all;
+}
+.navbar .navbarTextSide .links a:hover{
+  color: rgba(255,255,255,1);
 }
 .navbar .navbarTextSide .links .linksContact{
   margin-left: auto;
-  padding-right: 0;
+  background-color: rgba(255,255,255,0.06);
+  padding: 0.1em 1em 0.1em 1em;
 }
+.navbar .navbarTextSide .links .linksContact:hover{
+  background-color: rgba(255,255,255,1);
+  color:black;
+}
+.navbarLogoContainer{
+  width: 50%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 52px 3fr;
+  grid-template-rows: 1fr;
+}
+.navbarLogoContainer img{
+  grid-column: 1;
+  width: 50px;
+  padding: 15px;
+  padding-left: 0em;
+}
+.navbarLogoContainer p{
+  grid-column: 2;
+  font-size: 1em;
+  align-self: center;
+  line-height: 1em;
+  color: white;
+}
+.nominheight{
+  min-height: 20vh !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .homeAbout{
   grid-column: 2;
+  overflow-x: hidden!important;
   grid-row: 4;
-
+color: white;
 }
 .homeAbout div{
   width: 44%;
   background-color: rgba(0,0,0,0.2);
   min-height: 100%;
   display: flex;
+  overflow-x: hidden!important;
   justify-content: center;
   align-items: center;
   padding: 3em;
 
 }
+.servicer div{
+  width: 80% !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
 .bluerBlue{
   background-color: #000F46;
+  color: white;
 }
 .gridLayoutMain{
-  -webkit-box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.20);
-  -moz-box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.20);
-  box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.20);
+  -webkit-box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.02);
+  -moz-box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.02);
+  box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.02);
   min-height: 100vh;
   width: 100%;
   display: grid;
@@ -267,6 +364,8 @@ display: grid;
 }
 .logoContainer .imgContainer img{
   width: 70%;
+  -webkit-filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.05));
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.05));
 }
 .logoContainer .logoTextContainer{
   grid-column: 2;
@@ -298,18 +397,29 @@ display: grid;
   box-shadow: -5px 5px 51px 0px rgba(0,0,0,0.20);
 }
 #customerTest .logoContainer .logoTextContainer{
-  grid-column: 2;
+  grid-column: 1/3;
 }
 #customerTest .logoContainer .logoTextContainer p span{
   font-weight: 500;
   color: #EFFF00;
   text-decoration: none;
 }
-.footer{
 
-}
+
+
+
 @media screen and (max-width: 900px) {
-
+  ul{
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+  .navbar .navbarTextSide{
+    grid-column: 2/3;
+    height: 100%;
+    display: grid;
+    overflow-x: scroll;
+  }
   .c2{
     grid-column: 2;
   }
@@ -446,15 +556,9 @@ display: grid;
     line-height: 2.2;
     font-size: 1.2em;
     opacity: 0.9;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
     list-style: inside;
   }
 
-  ul li::before {
-    display: none;
-  }
   .gridLayoutThreeGum{
     display: none;
   }
